@@ -7,9 +7,7 @@ class Anagram
   
   def match(anagrams)
     anagrams.select do |anagram_word|
-      anagram_word.split("").all? do |letter|
-        word.split("").include?(letter)
-      end
+      anagram_word.split("").all? {|letter| word.split("").include?(letter)} & anagram_word.length = word.length
     end
   end
 end
