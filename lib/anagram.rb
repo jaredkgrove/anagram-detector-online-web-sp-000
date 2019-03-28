@@ -6,6 +6,8 @@ class Anagram
   end
   
   def match(anagrams)
-    anagrams.select do |
+    anagrams.select do |anagram_word|
+      
+    end
   end
 end
