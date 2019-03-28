@@ -7,7 +7,9 @@ class Anagram
   
   def match(anagrams)
     anagrams.select do |anagram_word|
-      anagram_word.all? 
+      anagram_word.all? do |letter|
+        
+      end
     end
   end
 end
